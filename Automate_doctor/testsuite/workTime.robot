@@ -5,5 +5,5 @@ Resource        ../resources/resource_workTime.robot
 
 *** Test Cases ***
 Work Time Setup
-        # Add time
+        Add time
         Edit time                             
