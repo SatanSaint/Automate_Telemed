@@ -99,4 +99,28 @@ Edit Profile
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${save_profile}
     Wait Until Page Contains Element        ${check_update_profile}         timeout=15s
     
+Appointment doctor
+    Login with user patient
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${Hamberger}
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${appoint}
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${select_title}
+    Scroll Element Into View                ${next_select}
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${next_select}
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${select_doctor}
+    Wait Until Page Contains Element        ${check_select_doctor}          timeout=15s
+    Scroll Element Into View                ${next_select_d}
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${next_select_d}
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${select_time}
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${next_select_2}
+    Input Text                              ${basic}                        test
+    Input Text                              ${more_detail}                  test
+    Clear Element Text                      ${weight}
+    Input Text                              ${weight}                       80
+    Clear Element Text                      ${hight}
+    Input Text                              ${hight}                        168
+    Scroll Element Into View                ${next_select_d}
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${next_pay}
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${confirm_2}
+    sleep   10s
+    Go to                                   ${url_patient}appointment/list
 

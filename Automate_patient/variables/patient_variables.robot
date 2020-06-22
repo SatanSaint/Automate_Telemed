@@ -67,7 +67,7 @@ ${select_title}             //body[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[2]
 ${next_select}              //div[@id='__layout']//main//div//div//div//div//div//div//button
 ${select_doctor}            //body[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]
 ${check_select_doctor}      //body[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]
-${next_select}              //body/div[@id='__nuxt']/div[@id='__layout']/main/div/div/div/div/div/div[2]/button[1]
+${next_select_d}            //body/div[@id='__nuxt']/div[@id='__layout']/main/div/div/div/div/div/div[2]/button[1]
 ${select_time}              //body[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/button[1]
 ${next_select_2}            //body//div[@id='__layout']//div//div//div//div[2]//button[1]
 ${basic}                    //body[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/input[1]
@@ -75,6 +75,8 @@ ${more_detail}              //body[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[2]
 ${weight}                   //input[@id='weight']
 ${hight}                    //input[@id='height']
 ${next_pay}                 //body[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[2]/div[1]/div[4]/div[2]/button[1]
-${confirm_pay}              //body[1]/div[1]/div[1]/main[1]/div[2]/div[1]/div[2]/div[1]/div[4]/div[2]/button[1]
 ${confirm_2}                //form[@name='PostForm']//button
+${close_pay}                //button[contains(text(),'×')]
+${cancel_pay}               //button[contains(text(),'Cancel')]
+${submit_pay}               //button[contains(text(),'OK')]
 
