@@ -63,7 +63,7 @@ Add time
     sleep    0.5s
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${secces}
     sleep    0.5s
-    close
+    Close Browser
 
 #################################################################################################
 ##########################             All Time              ###################################
@@ -84,3 +84,4 @@ Edit time
     sleep    0.5s
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${secces}
     sleep    0.5s
+    Close Browser

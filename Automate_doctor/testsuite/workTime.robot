@@ -1,5 +1,5 @@
 *** Settings ***
-Resource        ../config/config.robot
+Resource        ../config/Config.robot
 Resource        ../variables/variable_workTime.robot
 Resource        ../resources/resource_workTime.robot
 
