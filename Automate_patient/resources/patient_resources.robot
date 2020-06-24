@@ -74,7 +74,9 @@ Edit Profile
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${Hamberger}
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${Profile}
     Wait Until Page Contains            ข้อมูลผู้ป่วย                    timeout=15s
+    sleep   1s
     Clear Element Text                      ${disease}
+    sleep   1s
     Input Text                              ${disease}                      test
     Clear Element Text                      ${drug_allergy}
     Input Text                              ${drug_allergy}                 test
@@ -104,23 +106,42 @@ Appointment doctor
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${Hamberger}
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${appoint}
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${select_title}
-    Scroll Element Into View                ${next_select}
+    Scroll Element Into View                ${next_select} 
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${next_select}
+    # ${IsElementVisible}=  Run Keyword And Return Status     Element Should Be Visible   ${select_doctor}   timeout=60s
+    # Run Keyword If    ${IsElementVisible}  
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${select_doctor}
     Wait Until Page Contains Element        ${check_select_doctor}          timeout=15s
     Scroll Element Into View                ${next_select_d}
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${next_select_d}
-    Wait Until Keyword Succeeds     5x      3s      Click Element           ${select_time}
+    Wait Until Page Contains Element        ${select_time}                        timeout=30s
+    Click Element                           ${select_time}
+    Scroll Element Into View                ${next_select_2}
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${next_select_2}
+    Wait Until Page Contains Element        ${basic}                        timeout=30s
+    sleep   1s
     Input Text                              ${basic}                        test
+    sleep   1s
     Input Text                              ${more_detail}                  test
+    sleep   1s
     Clear Element Text                      ${weight}
+    sleep   1s
     Input Text                              ${weight}                       80
+    sleep   1s
     Clear Element Text                      ${hight}
+    sleep   1s
     Input Text                              ${hight}                        168
-    Scroll Element Into View                ${next_select_d}
+    sleep   1s
+    Scroll Element Into View                ${next_pay_1}
+    sleep   2s
+    Wait Until Keyword Succeeds     5x      3s      Click Element           ${next_pay_1}
+    sleep   1s
+    Scroll Element Into View                ${next_pay}
+    sleep   5s
     Wait Until Keyword Succeeds     5x      3s      Click Element           ${next_pay}
-    Wait Until Keyword Succeeds     5x      3s      Click Element           ${confirm_2}
+    sleep   1s
+    Wait Until Page Contains Element        ${confirm_2}                    timeout=60s
+    Wait Until Keyword Succeeds     5x      5s      Click Element           ${confirm_2}
     sleep   10s
     Go to                                   ${url_patient}appointment/list
 
