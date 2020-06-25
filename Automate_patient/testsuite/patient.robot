@@ -26,12 +26,12 @@ Login
 
 Edit Profile user
     Open Dhi Patient
-    Edit Profile2
+    Edit Profile
     sleep   10s
     Close Browser
 
-# Appointment Doctor
-#     Open Dhi Patient
-#     Appointment doctor
-#     sleep   10s
-#     Close Browser
+Appointment Doctor
+    Open Dhi Patient
+    Appointment doctor
+    sleep   10s
+    Close Browser
