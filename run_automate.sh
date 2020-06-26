@@ -13,4 +13,4 @@ MESSAGE_Result="PASS=$mypass And FAIL=$myfail"
 curl -X POST https://notify-api.line.me/api/notify \
  -H "Authorization: Bearer $LINE_ACCESSTOKEN" \
  -H "Content-Type: application/x-www-form-urlencoded" \
- -d "message=$MESSAGE_Result" 
+ -d "message=$MESSAGE_Result"

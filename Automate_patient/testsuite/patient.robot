@@ -9,8 +9,7 @@ Resource            ../config/Config.robot
 Login
     Open Dhi Patient
     Login with user patient
-    sleep   10s
-    Close Browser
+    sleep   5s
 
 # Register
 #     Open Dhi Patient
@@ -27,11 +26,9 @@ Login
 Edit Profile user
     Open Dhi Patient
     Edit Profile
-    sleep   10s
-    Close Browser
+    sleep   5s
 
 Appointment Doctor
     Open Dhi Patient
     Appointment doctor
-    sleep   10s
-    Close Browser
+    sleep   5s
