@@ -10,10 +10,12 @@ Login-Edit-appointment
     Open Dhi Patient
     Login with user patient
     sleep   5s
-    Edit Profile
-    sleep   5s
-    Appointment doctor
-    sleep   5s
+    Capture Page Screenshot
+    Close Browser
+    # Edit Profile
+    # sleep   5s
+    # Appointment doctor
+    # sleep   5s
 # Register
 #     Open Dhi Patient
 #     Register New user
@@ -26,12 +28,14 @@ Login-Edit-appointment
 #    sleep   10s
 #    Close Browser
 
-# Edit Profile user
-#     Open Dhi Patient
-#     Edit Profile
-#     sleep   5s
+Edit Profile user
+    Open Dhi Patient
+    Edit Profile
+    sleep   5s
+    Close Browser
 
-# Appointment Doctor
-#     Open Dhi Patient
-#     Appointment doctor
-#     sleep   5s
+Appointment Doctor
+    Open Dhi Patient
+    Appointment doctor
+    sleep   5s
+    Close Browser
